@@ -1,1 +1,11 @@
 {% extends "layout.html" %}
+{% block content %}
+<div class="panel panel-primary">
+  <div class="panel-body">
+      <img src="{{ image.URL }}">
+    {{ item[0].encode('utf-8') }}
+      <p>{{ item[1].encode('utf-8') }}</p>
+  </div>
+  <div class="panel-footer">Panel footer</div>
+</div>
+{% endblock %}

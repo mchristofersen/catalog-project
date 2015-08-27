@@ -5,19 +5,13 @@ import json
 from categories import categories
 
 from amazonproduct import API
-
-config = {
-    'access_key': 'AKIAIQ2XWYAK4OXVXWAQ',
-    'secret_key': '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',
-    'associate_tag': 'gotalgtut-20'
-}
-
+import amazonproduct
+api = amazonproduct.API(cfg='./my-config-file', locale='us')
 
 def s(str):
     return str.rstrip().lstrip()
 
 
-api = API(cfg=config, locale='us')
 for category in categories:
     if get_category_id(category):
         continue

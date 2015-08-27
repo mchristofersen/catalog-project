@@ -1,0 +1,7 @@
+/vagrant/.vagrant
+/vagrant/pg_config.sh
+/vagrant/Vagrantfile
+/vagrant/__init__.py
+/vagrant/catalog/amazon_product_api.py
+.idea/*
+/vagrant/catalog/seeds.py

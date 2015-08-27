@@ -1,7 +1,9 @@
 import psycopg2
 import re
-
-
+import random
+from amazon_product_api import CREDENTIALS
+import amazonproduct
+api = amazonproduct.API(cfg=CREDENTIALS)
 def connect():
     """Connect to the PostgreSQL database.
     Returns a database connection."""
@@ -40,4 +42,14 @@ def get_categories():
     return execute_query("SELECT name FROM all_categories")
 
 
-def get_random_items(int):
+def get_random_item(int=1):
+    arr = execute_query("""
+                    SELECT * FROM items
+                    """)
+    random.shuffle(arr)
+    return arr[0:int]
+
+def query_item(ain):
+    image = api.item_lookup(ain, ResponseGroup="Images").Items.Item.LargeImage
+    # details = api.item_lookup(ain)
+    return image
