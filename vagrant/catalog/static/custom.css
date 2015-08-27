@@ -1,0 +1,57 @@
+/*.container-flex {*/
+/*display: flex !important;*/
+/*flex-direction: row !important;*/
+/*}*/
+
+/*.navbar-default .navbar-nav > ul {*/
+/*flex: 3 !important;*/
+/*}*/
+
+/*.navbar-default .navbar-nav > ul:first-child {*/
+/*justify-self: flex-end !important;*/
+/*}*/
+
+/*#search {*/
+/*justify-items: center !important;*/
+/*order: 2 !important flex : 3*/
+/*}*/
+
+/*.navbar-brand {*/
+/*justify-self: center !important;*/
+/*align-self: center;*/
+/*float: none;*/
+/*flex: 2*/
+/*}*/
+
+body {
+    background: #9E9E9E !important
+}
+
+.navbar {
+    background: #616161 !important;
+    border-color: #717171 !important;
+}
+
+li a, .navbar-brand {
+    color: #FFFFFF !important;
+}
+
+li a:hover, .navbar-brand:hover {
+    color: #212121 !important;
+    background: #9E9E9E !important;
+}
+
+.btn-primary {
+    background: #c29305 !important;
+    border-color: #DDDDDD !important;
+    color: #FFFFFF !important;
+}
+
+li.active > a {
+    background: #c29305 !important;
+    border-color: #FFFFFF !important;
+}
+
+.btn-group > ul {
+    background: #c29305 !important;
+}
