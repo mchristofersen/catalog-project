@@ -4,4 +4,4 @@
 /vagrant/__init__.py
 /vagrant/catalog/amazon_product_api.py
 .idea/*
-/vagrant/catalog/seeds.py
+/old/seeds.py

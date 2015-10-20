@@ -17,9 +17,10 @@ CREATE TABLE subcategories (name VARCHAR(350) UNIQUE,
                             );
 
 CREATE TABLE items (name VARCHAR(350) UNIQUE,
-                   description text,
+                   description VARCHAR(10485760),
                    AIN VARCHAR(150) PRIMARY KEY,
-                   subcategory_id int REFERENCES subcategories(id)
+                   subcategory_id int REFERENCES subcategories(id),
+                   image VARCHAR(150)
                   );
 
 CREATE VIEW all_categories AS

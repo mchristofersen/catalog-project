@@ -1,0 +1,9 @@
+{% block content %}
+    {% for row in response %}
+    <div style="display:flex;">
+    {% for item in row %}
+    <div style="flex: 1;align-self: center">{{ item }}</div>
+    {% endfor %}
+    </div>
+    {% endfor %}
+{% endblock %}

@@ -1,5 +1,5 @@
 global categories
-categories = ('Electronics', 'PCHardware')
+categories = ("All","PCHardware")
               # 'VideoGames', 'Photo',
               # 'SportingGoods',
               # 'Watches')

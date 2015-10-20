@@ -1,0 +1,5 @@
+ Client ID:
+579744299893-l3aj74eqe635d5pial4goed3kbfgbeuu.apps.googleusercontent.com
+
+Client Secret:
+6G2kAM_3WZ-fkMd1a3JgeH93

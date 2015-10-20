@@ -1,0 +1,13 @@
+<div>
+    <ul>
+         {% for item in list %}
+        <li style="display: flex; align-content: center; flex-direction: column;"><h4>{{ item[0] }}</h4>
+        <div > <img src="{{ item[3][2] }}" style="float:left !important;"><div class="editorial">{{ item[1] }}</div><h3>{{ item[2] }}</h3></div>
+
+            <div class="clearfix"></div>
+
+
+        </li>
+        {% endfor %}
+    </ul>
+</div>
